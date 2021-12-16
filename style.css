@@ -1,0 +1,264 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background-color: #000 !important;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  p{
+    font-size: large;
+  }
+  
+  /* Navbar */
+  .navbar{
+    background-color: #ffffff;
+  }
+  
+  .nav-item{
+    display: block;
+    padding: 5px 15px;
+  }
+  
+  .nav-link{
+    color: #000 !important;
+    font-weight: 500;
+    margin: 0px 1px;
+  }
+  
+  .nav-link:hover, .active{
+    color: #ffffff !important;
+    background-color: #dc143c;
+  }
+  
+  .openbtn, .sidepanel{
+    display: none !important;
+  }
+  
+  @media (max-width: 891px){
+    nav ul{
+      display: none !important;
+    }
+  
+    .sidepanel {
+      display: inline !important;
+      width: 0;
+      position: fixed;
+      z-index: 99999;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+  
+    .sidepanel a {
+      padding: 8px 8px 8px 25px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #f8f8f8;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    .sidepanel a:hover {
+      color: #f1f1f1;
+    }
+  
+    .sidepanel .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 32px;
+    }
+  
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #dc143c;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      position: fixed;
+      right: 0;
+      display: inline !important;
+    }
+  }
+  
+  /* Contact */
+  .wrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .one, .three{
+    width: 320px;
+    height: 115px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #5c5c5c;
+    border-radius: 5px;
+  }
+  
+  .two{
+    width: 350px;
+    height: 130px;
+    border-radius: 5px;
+    background-color: #dc143c;
+    color: white;
+  }
+  
+  .socials{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icons{
+    color: #ffffff;
+    margin: 0px 10px;
+  }
+  
+  /* Footer */
+  footer p{
+  color: #999;
+  line-height: 25px;
+  text-align: justify;
+  justify-content: center;
+  }
+  
+  .ftitles{
+  color: #fff;
+  }
+  
+  .footer-top{
+  background: #111;
+  padding: 40px;
+  }
+  
+  .segment-one h4, .segment-three h3{
+  margin: 20px 0;
+  }
+  
+  .segment-two h3{
+  margin: 15px 0;
+  }
+  
+  .segment-two ul{
+  margin: 0;
+  padding: 0;
+  }
+  
+  .segment-two ul li{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  line-height: 40px;
+  }
+  
+  .segment-two ul li a{
+  text-decoration: none;
+  color: #999;
+  display: block;
+  transition: 0.2s ease;
+  }
+  
+  .segment-two ul li a:hover{
+  padding-left: 15px;
+  color: #efefef;
+  transition: 0.2s ease;
+  }
+  
+  .segment-three input{
+  width: 100%;
+  margin-bottom: 10px;
+  height: 35px;
+  background: transparent;
+  border: 1px solid #999;
+  color: #fff;
+    font-weight: lighter;
+    padding-left: 2px;
+  }
+  
+  .segment-three button{
+  width: 35%;
+    padding: 7px;
+    color: #fff;
+  border: none;
+  background: #c4302b;
+    transition: 0.2px;
+  }
+  
+  .segment-three button:hover{
+    background: #fff;
+    color: #c4302b;
+    font-weight: 500;
+    font-size: larger;
+    padding: 4px;
+    transition: 0.2s;
+    margin-bottom: 2px;
+  }
+  
+  .f-icons{
+    color: #999 !important;
+    margin: 0px 10px;
+    padding: 10px; 
+    border: 1px solid #999;
+    border-radius: 50%;
+  }
+  
+  .f-icons:hover{
+     color: #fff !important;
+     transition: 0.3s;
+  }
+  
+  .footer-bottom-text{
+  color: #999;
+  background: #333;
+  text-align: center;
+  padding: 10px;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+  .md-mb-30{
+   margin-bottom: 30px;
+  }
+  .footer-top{
+   padding: 30px 10px;
+   margin: 0px;
+   width: 100%; 
+  }
+  }
+  
+  @media only screen and (max-width: 767px){
+  .sm-mb-30{
+   margin-bottom: 30px;
+  }
+  .footer-top{
+   padding: 20px 5px;
+  }
+  }
+  
+  .footer-bottom-text{
+   margin-bottom: 0px;
+  }
+  
+  
+  
